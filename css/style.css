@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&family=Roboto&display=swap");
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.container {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo img {
+  max-width: 170px;
+  margin: 17px 0 9px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.hero {
+  background: #000000 url(../img/header-background-1.jpg) 50% 0 / cover
+    no-repeat;
+}
+
+.hero__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hero__offer {
+  margin-top: -30px;
+  text-align: center;
+  flex: 1 1 50%;
+}
+
+.hero__subtitle {
+  font-size: 51px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 1px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.hero__subtitle span {
+  font-weight: 800;
+}
+
+/* .hero__bonus {
+  width: 100%;
+  max-width: 610px;
+  margin-bottom: 0;
+} */
+
+.hero__subbonus {
+  text-align: left;
+  font-size: 51px;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.hero__subbonus-items-inner {
+  /* display: flex;
+  justify-content: space-between; */
+  margin-bottom: 35px;
+}
+
+.hero__subbonus-up {
+  font-size: 320px;
+  font-weight: 800;
+  line-height: 1;
+  /* margin: 0 10px; */
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.hero__subbonus-down {
+  margin-top: -30px;
+  font-weight: 800;
+  font-size: 110px;
+  line-height: 1;
+}
+
+.hero__button {
+  display: block;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 1.2;
+  color: #ffffff;
+  background: #ff005c;
+  border-radius: 6.7px;
+  box-sizing: border-box;
+  padding: 10px 36px;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.hero__button:hover {
+  background: linear-gradient(180deg, #9494ee 51.56%, #5d5ddb 53.88%);
+}
+
+.hero__img {
+  margin-top: -60px;
+  flex: 1 1 50%;
+  align-self: center;
+}
+
+.hero__img_small {
+  display: none;
+}
+
+.hero__img img {
+  display: block;
+  width: 100%;
+  max-width: 597px;
+  margin: 0 auto;
+}
+
+.hero__steps-inner {
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.hero__steps {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__steps-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 225px;
+  background: #111111;
+  border-radius: 5px;
+}
+
+.hero__steps-item:not(:last-child) {
+  margin-right: 10px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.hero__steps-num {
+  border: 1px solid #ff005c;
+
+  border-radius: 5px;
+
+  font-weight: 900;
+  font-size: 41px;
+  padding: 10px 25px;
+  color: #ffffff;
+  margin-right: 10px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.hero__steps-content {
+  font-weight: 700;
+  font-size: 27px;
+  text-align: left;
+  color: #ffffff;
+  margin-right: 20px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.hero__steps-arrow {
+  margin-right: 8px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+/* disclaimer */
+
+.disclaimer {
+  font-family: "Roboto", sans-serif;
+  background: #111111;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* .disclaimer__title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 2px;
+} */
+
+/* media */
+
+@media (max-width: 1400px) {
+  .hero__subbonus-up {
+    font-size: 270px;
+  }
+
+  .hero__subbonus-down {
+    margin-top: -20px;
+    font-size: 95px;
+  }
+
+  .hero__steps-item:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  .hero__steps-num {
+    font-size: 34px;
+  }
+
+  .hero__steps-content {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .hero__inner {
+    flex-wrap: wrap;
+  }
+
+  .hero__offer {
+    flex: 1 1 auto;
+  }
+
+  .hero__subtitle,
+  .hero__subbonus {
+    max-width: 740px;
+    margin: 0 auto;
+  }
+
+  .hero__img_big {
+    display: none;
+  }
+
+  .hero__img_small {
+    display: flex;
+  }
+
+  .hero__img {
+    flex: 1 1 auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  .hero__steps-inner {
+    display: block;
+    text-align: left;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .hero__steps {
+    display: block;
+    justify-content: center;
+  }
+
+  .hero__steps-item {
+    margin-bottom: 18px;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+
+  .hero__steps-item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .hero__steps-num {
+    font-size: 41px;
+  }
+
+  .hero__steps-content {
+    font-size: 28px;
+  }
+
+  .hero__button {
+    font-size: 39px;
+    padding: 4px 24px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 780px) {
+  .hero__subbonus-up {
+    margin-top: 20px;
+    font-size: 130px;
+  }
+
+  .hero__subbonus-down {
+    margin-top: -10px;
+    font-size: 48px;
+  }
+
+  .hero__subtitle,
+  .hero__subbonus {
+    max-width: 370px;
+    font-size: 25px;
+  }
+
+  .hero__subbonus-items-inner {
+    margin-bottom: 15px;
+  }
+
+  .hero__steps-item {
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    max-width: 124px;
+    margin: 17px 0 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero__subbonus-up {
+    margin-top: 20px;
+    font-size: 105px;
+  }
+
+  .hero__subbonus-down {
+    margin-top: -10px;
+    font-size: 38px;
+  }
+
+  .hero__subtitle,
+  .hero__subbonus {
+    max-width: 290px;
+    font-size: 20px;
+  }
+
+  .hero__button {
+    font-size: 34px;
+  }
+}
